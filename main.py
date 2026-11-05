@@ -81,3 +81,4 @@ async def create_application(app_data: Application):
         except Exception as e:
             logging.error(f"Не удалось отправить сообщение: {e}")
         await asyncio.sleep(2)
+    return {"success": "ok"}
